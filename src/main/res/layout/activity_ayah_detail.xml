@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/img_4"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="24dp">
+
+            <TextView
+                android:id="@+id/tvInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="السورة والآية"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#5F6F2B"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView
+                android:id="@+id/tvAyah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="الآية"
+                android:textSize="24sp"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:layout_marginBottom="16dp"/>
+
+            <ImageView
+                android:id="@+id/imgPage"
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/page1"
+                android:layout_marginBottom="20dp"/>
+
+            <Button
+                android:id="@+id/btnPlay"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:text="تشغيل الصوت"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                android:backgroundTint="#768435"
+                android:layout_marginBottom="12dp"/>
+
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:text="الآية التالية"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                android:backgroundTint="#768435"
+                android:layout_marginBottom="12dp"/>
+
+            <Button
+                android:id="@+id/btnPrevious"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:text="الآية السابقة"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                android:backgroundTint="#768435"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <View
+        android:id="@+id/darkOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#88000000"
+        android:visibility="gone"/>
+
+</FrameLayout>

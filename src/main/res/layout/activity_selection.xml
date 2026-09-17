@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/img_4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="اختر السورة"
+                android:textColor="#5F6F2B"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="24dp"/>
+
+            <Spinner
+                android:id="@+id/spinnerSurah"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"/>
+
+            <Button
+                android:id="@+id/btnStartMemorize"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:text="بدء الحفظ"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:backgroundTint="#768435"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <View
+        android:id="@+id/darkOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#88000000"
+        android:visibility="gone"/>
+
+</FrameLayout>

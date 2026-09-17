@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/img"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#768435"
+            app:title="تطبيق حفظ القران"
+            app:titleTextColor="@android:color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <ImageButton
+                android:id="@+id/btnStart"
+                android:layout_width="180dp"
+                android:layout_height="90dp"
+                android:src="@drawable/img_1"
+                android:background="@android:drawable/btn_default"
+                android:scaleType="fitCenter"
+                android:padding="10dp"
+                android:contentDescription="ابدأ الحفظ"
+                android:layout_marginBottom="16dp" />
+
+            <ImageButton
+                android:id="@+id/btnAzkar"
+                android:layout_width="180dp"
+                android:layout_height="90dp"
+                android:src="@drawable/img_2"
+                android:background="@android:drawable/btn_default"
+                android:scaleType="fitCenter"
+                android:padding="10dp"
+                android:contentDescription="الأذكار"
+                android:layout_marginBottom="16dp" />
+
+            <ImageButton
+                android:id="@+id/btnSettings"
+                android:layout_width="180dp"
+                android:layout_height="90dp"
+                android:src="@drawable/img_3"
+                android:background="@android:drawable/btn_default"
+                android:scaleType="fitCenter"
+                android:padding="10dp"
+                android:contentDescription="الإعدادات" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/darkOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#88000000"
+        android:visibility="gone" />
+
+</FrameLayout>

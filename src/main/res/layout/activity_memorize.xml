@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/img_4"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tvSurahName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="اسم السورة"
+                android:textColor="#5F6F2B"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="20dp"/>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:id="@+id/tvVerse"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="22sp"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:lineSpacingExtra="12dp"/>
+            </ScrollView>
+
+            <EditText
+                android:id="@+id/editFrom"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:hint="من آية"
+                android:backgroundTint="#768435"
+                android:textColor="#000000"
+                android:textColorHint="#555555"
+                android:inputType="number"
+                android:layout_marginBottom="12dp"/>
+
+            <EditText
+                android:id="@+id/editTo"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:hint="إلى آية"
+                android:backgroundTint="#768435"
+                android:textColor="#000000"
+                android:textColorHint="#555555"
+                android:inputType="number"
+                android:layout_marginBottom="12dp"/>
+
+            <EditText
+                android:id="@+id/editRepeat"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:hint="عدد التكرار"
+                android:backgroundTint="#768435"
+                android:textColor="#000000"
+                android:textColorHint="#555555"
+                android:inputType="number"
+                android:layout_marginBottom="12dp"/>
+
+            <EditText
+                android:id="@+id/editMinutes"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:hint="مدة التوقف بالدقائق"
+                android:backgroundTint="#768435"
+                android:textColor="#000000"
+                android:textColorHint="#555555"
+                android:inputType="number"
+                android:layout_marginBottom="20dp"/>
+
+            <Button
+                android:id="@+id/btnPrevious"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:text="الآية السابقة"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                android:backgroundTint="#768435"
+                android:layout_marginBottom="12dp"/>
+
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:text="الآية التالية"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                android:backgroundTint="#768435"
+                android:layout_marginBottom="12dp"/>
+
+            <Button
+                android:id="@+id/btnPlay"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:text="تشغيل التكرار"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                android:backgroundTint="#768435"
+                android:layout_marginBottom="12dp"/>
+
+            <Button
+                android:id="@+id/btnStop"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:text="إيقاف مؤقت"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                android:backgroundTint="#768435"
+                android:layout_marginBottom="20dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <View
+        android:id="@+id/darkOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#88000000"
+        android:visibility="gone"/>
+
+</FrameLayout>

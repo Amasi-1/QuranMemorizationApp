@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">تطبيق حفظ القرآن</string>
+
+    <string name="title_main">تطبيق حفظ القرآن</string>
+    <string name="btn_start_memorizing">ابدأ الحفظ</string>
+    <string name="btn_settings">الإعدادات</string>
+
+    <string name="toast_settings">الإعدادات قريبًا</string>
+
+</resources>
